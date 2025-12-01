@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="artemusik-header">
+    <div class="logo">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm-1 16v-6.5c0-.28-.22-.5-.5-.5H9v4h1v2h1zm4.5-5.5h-3c-.28 0-.5.22-.5.5V14h4v-1.5c0-.28-.22-.5-.5-.5zm-4-4.5h2v4h-2v-4z"/>
+        </svg>
+        <span class="logo-text">ArteMusik</span>
+    </div>
+    <div class="search-bar">
+        <i class="search-icon">🔍</i>
+        <input type="text" placeholder="Buscar clases, música, servicios.">
+    </div>
+    <div class="user-actions">
+        <i class="user-icon">👤</i>
+        <i class="cart-icon">🛒</i>
+    </div>
+</header>
+    </header>
+    <div class="page-container">
+    <aside class="sidebar">
+        <div class="filter-section">
+            <h4 class="section-title">Tipo de Servicio</h4>
+            <ul>
+                <li><a href="#" class="active">Todos</a></li>
+                <li><a href="#">Clases</a></li>
+                <li><a href="#">Grabaciones</a></li>
+                <li><a href="#">Sesiones</a></li>
+            </ul>
+        </div>
+
+        <div class="filter-section">
+            <h4 class="section-title">Categorías</h4>
+            <ul>
+                <li><a href="#">Clases de Música</a></li>
+                <li><a href="#">Clases de Arte</a></li>
+                <li><a href="#">Producción Musical</a></li>
+                <li><a href="#">Canciones/Beats</a></li>
+                <li><a href="#">Fotografía</a></li>
+                <li><a href="#">Diseño Gráfico</a></li>
+            </ul>
+        </div>
+
+        <div class="filter-section">
+            <h4 class="section-title">Rango de Precio</h4>
+            <div class="price-range">
+                <input type="range" min="0" max="500" value="250" class="slider">
+                <div class="price-labels">
+                    <span>$0</span>
+                    <span>$500</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <h4 class="section-title">Calificación</h4>
+            <ul>
+                <li><a href="#">4+ Estrellas</a></li>
+                <li><a href="#">3+ Estrellas</a></li>
+                <li><a href="#">2+ Estrellas</a></li>
+                <li><a href="#">1+ Estrellas</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="content-header">
+            <h2>Explora Nuestros Servicios</h2>
+            <div class="header-info">
+                <span>12 servicios disponibles</span>
+                <span class="highlight">Destacados</span>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="https://lh3.googleusercontent.com/proxy/aVmNfuKB2sTZMyA05f4OseKOJThMEEDnVLo4KXZdpTYNRpc2ucTXvz25SMOmPp7AXufze2VD82JZJVbYBS29vGwvokZCL8ldYK5qs9VVPXw2Ew6Dj1wWNA" alt="Clases de Guitarra Acústica" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Clases de Guitarra Acústica - Nivel Principiante</h3>
+                    <p class="card-author">Por Carlos Mendoza</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(156)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 1 hora</span>
+                        <span>👥 234</span>
+                    </div>
+                    <p class="card-price">$45</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRleqJUoCeh3FKHPQdSet6btdrqQJZjt4cDtQ&s" alt="Curso Completo de Piano" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Curso Completo de Piano - Principiante a Avanzado</h3>
+                    <p class="card-author">Por María García</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(298)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 1.5 horas</span>
+                        <span>👥 466</span>
+                    </div>
+                    <p class="card-price">$65</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="taller_oleo.jpg" alt="Taller de Pintura al Óleo" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Taller de Pintura al Óleo - Técnicas Clásicas</h3>
+                    <p class="card-author">Por Ana Martínez</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(187)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 2 horas</span>
+                        <span>👥 178</span>
+                    </div>
+                    <p class="card-price">$55</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="beats_profesionales.jpg" alt="Beats Profesionales" class="card-image">
+                    <span class="tag tag-grabacion">Grabación</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Beats Profesionales - Pack de 5 Pistas Exclusivas</h3>
+                    <p class="card-author"></p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(19)</span>
+                    </div>
+                    <div class="details">
+                        </div>
+                    <p class="card-price">$120</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="clases_violin.jpg" alt="Clases de Violín" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Clases de Violín - Técnica y Repertorio Clásico</h3>
+                    <p class="card-author">Por Luis Ramírez</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(143)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 1 hora</span>
+                        <span>👥 98</span>
+                    </div>
+                    <p class="card-price">$70</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="entrenamiento_vocal.jpg" alt="Entrenamiento Vocal" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Entrenamiento Vocal y Técnica de Canto</h3>
+                    <p class="card-author">Por Laura Sánchez</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(267)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 45 min</span>
+                        <span>👥 345</span>
+                    </div>
+                    <p class="card-price">$50</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="curso_dibujo.jpg" alt="Curso de Dibujo Artístico" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Curso de Dibujo Artístico - Del Boceto a la Obra</h3>
+                    <p class="card-author">Por Pedro Torres</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(201)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 1.5 horas</span>
+                        <span>👥 289</span>
+                    </div>
+                    <p class="card-price">$40</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="produccion_musical.jpg" alt="Producción Musical Electrónica" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Producción Musical Electrónica - Ableton & Fl Studio</h3>
+                    <p class="card-author">Por DJ Marcos</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(178)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 2 horas</span>
+                        <span>👥 312</span>
+                    </div>
+                    <p class="card-price">$85</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="sesion_fotografia.jpg" alt="Sesión de Fotografía Profesional" class="card-image">
+                    <span class="tag tag-sesion">Sesión</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Sesión de Fotografía Profesional - Retrato</h3>
+                    <p class="card-author">Por Elena Rodríguez</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(124)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 2 horas</span>
+                    </div>
+                    <p class="card-price">$150</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="clases_bateria.jpg" alt="Clases de Batería" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Clases de Batería - Rock y Pop</h3>
+                    <p class="card-author">Por Roberto Cruz</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(156)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 1 hora</span>
+                        <span>👥 187</span>
+                    </div>
+                    <p class="card-price">$55</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+
+            <div class="service-card no-disponible">
+                <div class="card-image-wrapper">
+                    <img src="canciones_originales.jpg" alt="Canciones Originales" class="card-image">
+                    <span class="tag tag-grabacion">Grabación</span>
+                    <span class="tag tag-unavailable">No Disponible</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Canciones Originales - Pistas de Rap/Hip-Hop</h3>
+                    <p class="card-author"></p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span>(67)</span>
+                    </div>
+                    <div class="details">
+                        </div>
+                    <p class="card-price">$95</p>
+                    <button class="add-to-cart-btn disabled">No Disponible</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-image-wrapper">
+                    <img src="masterclass_acuarela.jpg" alt="Masterclass de Acuarela" class="card-image">
+                    <span class="tag tag-clase">Clase</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Masterclass de Acuarela - Paisajes y Naturaleza</h3>
+                    <p class="card-author">Por Sofía Vargas</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(212)</span>
+                    </div>
+                    <div class="details">
+                        <span>🕒 2 horas</span>
+                        <span>👥 267</span>
+                    </div>
+                    <p class="card-price">$60</p>
+                    <button class="add-to-cart-btn">🛒 Agregar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
